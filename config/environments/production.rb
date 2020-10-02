@@ -9,7 +9,8 @@ Rails.application.configure do
 
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
-  config.assets.compile = false
+  config.assets.compile = true
+  config.assets.digest = true
   config.assets.precompile += %w( '.svg' )  
   config.assets.css_compressor = :sass
 

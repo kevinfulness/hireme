@@ -31,7 +31,7 @@
 	margin: 0 10px 0 0;
 	min-width: 48px;
 	height: 48px;
-	background-image: url(logo.svg);
+	background-image: image-url(logo.svg);
 	background-size: 100%;
 	background-position: center;
 }
@@ -62,7 +62,7 @@
 	height: 56px;
 	background-color: #7E5180;
 	border-radius: 28px;
-	background-image: url(nav__contact.svg);
+	background-image: image-url(nav__contact.svg);
 	background-size: 40%;
 	background-position: center;
 	transition: background-color .5s;
