@@ -1,0 +1,14 @@
+<div class="nav">
+	<div class="nav__logo"></div>
+	<div class="nav__lockup">
+		<div class="nav__name">Kevin Plunkett</div>
+		<div class="nav__title">UI Design</div>
+	</div>
+	<% if user_signed_in? %>
+		<li><%= link_to 'New Project', new_project_path %></li>
+		<li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
+	<% end %>
+	<a href="javascript:decryptEmail('a2FwbHVua2V0dEBnbWFpbC5jb20=');">
+		<div class="nav__contact"></div>
+	</a>
+</div>

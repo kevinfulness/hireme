@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kevin Plunkett | UI Design</title>
+		<%= csrf_meta_tags %>
+		<%= csp_meta_tag %>
+		<meta name="viewport" content="width=device-width">
+		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<%= render 'layouts/google_analytics' %>
+		<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Abril+Fatface&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<%= render 'layouts/nav' %>
+		<div class="wrapper">
+			<%= render 'shared/messages' %>
+			<%= yield %>
+		</div>
+	</body>
+</html>

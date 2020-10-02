@@ -1,0 +1,22 @@
+<% if @project.errors.any? %>
+	<div class="growl">
+		<ul>
+			<% @project.errors.full_messages.each do |msg|%>
+			<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+
+<%= form_for @project do |f| %>
+	<div class="form">
+	<%= f.text_field :title, placeholder: "title" %>
+	<%= f.text_area :description, placeholder: "description" %>
+	<%= f.label :images %>
+	<%= f.file_field :images, multiple: true, placeholder: "images" %>
+	<%= f.label :thumbnail %>
+	<%= f.file_field :thumbnail, placeholder: "thumbnail" %>
+    <%= f.text_field :user_id, value: current_user.id, class:'hidden'%>
+	<%= f.submit %>
+	</div>
+<% end -%>

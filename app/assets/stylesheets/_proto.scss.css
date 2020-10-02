@@ -1,0 +1,30 @@
+.project__copy {
+	max-width: 768px;
+	margin: 0 auto;
+}
+
+.proto {
+	min-width: 100;
+	margin: 60px auto;
+	padding: 0 10px;
+	overflow-x: auto;
+}
+
+.proto__scroll {
+	min-width: 1024px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.proto__image {
+	margin: 15px;
+	max-width: 50%;
+}
+
+.proto__image img {
+	width: 100%;
+	box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}

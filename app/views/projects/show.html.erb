@@ -1,0 +1,26 @@
+<%= link_to 'Back', root_path %>
+
+<% if can? :manage, @article %> 
+	<div class="project__controls">
+		<ul>
+			<li><%= link_to 'Edit', edit_project_path(@project) %></li>
+			<li><%= link_to 'Delete', project_path(@project), method: :delete, data: {confirm: "Bruh... you sure?"} %></li>
+		</ul>
+	</div>
+<% end -%>
+
+<div class="project__copy">
+	<h1><%= @project.title %></h1>
+	<p><%= @project.description %></p>
+</div>
+<div class="proto">
+	<div class="proto__scroll">
+		<% if @project.images.attached? %>
+			<% @project.images.each do |image| %>
+				<div class="proto__image">
+					<%= image_tag(image) %>
+				</div>
+			<% end %>	
+		<% end -%>
+	</div>
+</div>

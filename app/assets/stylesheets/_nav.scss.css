@@ -1,0 +1,74 @@
+.nav {
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+	padding: 40px 20px;
+	color: #4d415f;
+	position: fixed;
+	top: 0;
+	z-index: 4;
+	background: rgba(255,255,255,0.9);
+	min-width: 100%;	
+
+}
+
+.nav div {
+	background-repeat: no-repeat;
+}
+
+.nav>a {
+	margin: 0 0 0 auto;
+
+}
+
+.nav li {
+	margin: auto;
+}
+
+.nav__logo {
+	margin: 0 10px 0 0;
+	min-width: 48px;
+	height: 48px;
+	background-image: url(logo.svg);
+	background-size: 100%;
+	background-position: center;
+}
+
+.nav__lockup {
+	max-width: 152px;
+}
+
+.nav__name, .nav__title { 
+ 	white-space: nowrap;
+ 	margin: 0;
+	font-family: 'Abril Fatface';
+
+}
+
+.nav__name {
+	font-size: 22px;
+}
+
+.nav__title {
+	font-size: 16px;
+
+}
+
+.nav__contact {
+	margin: 0 0 0 auto;
+	width: 56px;
+	height: 56px;
+	background-color: #7E5180;
+	border-radius: 28px;
+	background-image: url(nav__contact.svg);
+	background-size: 40%;
+	background-position: center;
+	transition: background-color .5s;
+
+}
+
+.nav__contact:hover {
+	background-color: #4d415f;
+}

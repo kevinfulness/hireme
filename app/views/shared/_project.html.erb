@@ -1,0 +1,14 @@
+<% obj.each do |project| %>
+		<div class="gallery__item">
+			<%= link_to project_path(project) do %>
+				<div class="gallery__item_background">
+					<%= image_tag(project.thumbnail) %>
+				</div>
+				<div class="gallery__item_title">
+					<h1>
+						<%= project.title %>
+					</h1>
+				</div>
+			<% end %>
+		</div>
+<% end %>
