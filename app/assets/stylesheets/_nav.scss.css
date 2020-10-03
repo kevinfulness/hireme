@@ -20,7 +20,7 @@
 
 .nav>a {
 	margin: 0 0 0 auto;
-
+	cursor: pointer;
 }
 
 .nav li {
@@ -66,7 +66,6 @@
 	background-size: 40%;
 	background-position: center;
 	transition: background-color .5s;
-
 }
 
 .nav__contact:hover {

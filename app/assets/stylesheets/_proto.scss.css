@@ -25,6 +25,17 @@
 	min-width: 25%;
 }
 
+.proto__image:only-child {
+	margin: 15px auto;
+	width: 75%;
+	max-width: 1024px;
+}
+
+.proto__image:first-child:nth-last-child(2),
+.proto__image:first-child:nth-last-child(2) ~ .proto__image {
+	margin: 15px auto;
+}
+
 .proto__image img {
 	width: 100%;
 	box-shadow: 0 0 20px rgba(0,0,0,0.2);
