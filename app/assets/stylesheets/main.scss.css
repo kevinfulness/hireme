@@ -13,7 +13,19 @@
 	font-family:'Abril Fatface';
 }
 
-h1, .nav__title { font-family: 'Abril Fatface'; }
+@font-face {
+	font-family: 'Montserrat';
+}
+
+h1, .nav__name { 
+	font-family: 'Montserrat';
+	font-weight: 800;
+}
+
+.nav__title {
+	font-family: 'Montserrat';
+	font-weight: 300;	
+}
 
 h1 {
 	font-size: 24px;
