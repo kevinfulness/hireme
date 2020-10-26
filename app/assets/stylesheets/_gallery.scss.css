@@ -2,8 +2,8 @@
 	width: 90vw;
 	color: #FFF;
 	display: inline-flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	flex-direction: row-reverse;
 	justify-content: center;
 }
 
